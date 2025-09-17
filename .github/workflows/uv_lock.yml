@@ -26,17 +26,17 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         fetch-depth: 0
 
     - name: Setup Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version-file: '.python-version'
 
     - name: Install uv
-      uses: astral-sh/setup-uv@v5
+      uses: astral-sh/setup-uv@v6
       with:
         version: "latest"
 
@@ -60,7 +60,7 @@ jobs:
 
     - name: Commit uv lock changes
       if: steps.uv_lock.outputs.lock_updated == 'true'
-      uses: stefanzweifel/git-auto-commit-action@v5
+      uses: stefanzweifel/git-auto-commit-action@v6
       with:
         commit_message: 'chore: update uv.lock'
         file_pattern: 'uv.lock'

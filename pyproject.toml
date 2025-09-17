@@ -13,7 +13,8 @@ requires-python = ">=3.11"
 
 dependencies = [
     "django",
-    "django-glue==0.8.7"
+    "django-glue==0.8.7",
+    "django-spire"
 ]
 
 [project.optional-dependencies]
