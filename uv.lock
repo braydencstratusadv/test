@@ -489,7 +489,7 @@ wheels = [
 
 [[package]]
 name = "django-spire"
-version = "0.16.1"
+version = "0.16.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "crispy-bootstrap5" },
@@ -510,9 +510,9 @@ dependencies = [
     { name = "twilio" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/16/39/052f03f367554ec469a06dd3833bf8e0dca2087d1f677623094d6ceba663/django_spire-0.16.1.tar.gz", hash = "sha256:94138d45c389709e2e3abe2a77c888d70e2976e6262f0a06a702b627056dc95e", size = 720800, upload-time = "2025-09-16T17:54:32.108Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a3/96/8d5bcda73dff53e209ca82bebeede97e0400adab6edeb5facc9553c03419/django_spire-0.16.2.tar.gz", hash = "sha256:4553280dd34512dd23750adf5bba5a3da94201d487d78cb244c0a2ea74925807", size = 719708, upload-time = "2025-09-17T14:01:58.765Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/49/d7/571de54e13709a80ad4e505c66c232874b86180f16258c7d68d86c34ec7e/django_spire-0.16.1-py3-none-any.whl", hash = "sha256:7e33a6c4026017fd4155f3db7370c5726e6095ce08dffe83e91feefe65aa0077", size = 1033746, upload-time = "2025-09-16T17:54:30.467Z" },
+    { url = "https://files.pythonhosted.org/packages/b0/40/6a2a2afb6b61c97f94adbaf2fe8fa9f91ea69b9bcdd37ba03600e82eb8c8/django_spire-0.16.2-py3-none-any.whl", hash = "sha256:a498eb80df3e983a2023d21231021b18149649229b79138accdf51cbcfb6d2bf", size = 1032732, upload-time = "2025-09-17T14:01:57.464Z" },
 ]
 
 [[package]]
