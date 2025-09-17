@@ -1,0 +1,26 @@
+[project]
+name = "test"
+version = "1.0.0"
+description = "A project for testing"
+authors = [
+    { name = "Brayden Carlson", email = "braydenc@stratusadv.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+requires-python = ">=3.11"
+
+dependencies = [
+    "django-glue==0.8.7"
+]
+
+[project.optional-dependencies]
+development = []
+production = []
+
+[tool.setuptools]
+packages = ["."]
+
+[tool.setuptools.package-data]
+"*" = ["*.md", "*.txt"]

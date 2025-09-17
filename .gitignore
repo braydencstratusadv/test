@@ -1,0 +1,17 @@
+*-checkpoint.ipynb
+*.bat
+*.db
+!dandy_cache.db
+*.egg-info
+*.env
+*.sql
+
+__pycache__/
+.dandy*
+.idea
+.python-version
+.qodo
+.venv*/
+.vscode/
+inspectionProfiles/
+venv*/
