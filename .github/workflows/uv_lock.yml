@@ -29,6 +29,7 @@ jobs:
       uses: actions/checkout@v5
       with:
         fetch-depth: 0
+        ref: ${{ github.event.pull_request.head.ref || github.ref }}
 
     - name: Setup Python
       uses: actions/setup-python@v6
@@ -58,8 +59,8 @@ jobs:
         fi
       id: uv_lock
 
-    - name: Commit uv lock changes
-      if: steps.uv_lock.outputs.lock_updated == 'true'
+    - name: Commit uv lock changes (PR)
+      if: steps.uv_lock.outputs.lock_updated == 'true' && github.event_name == 'pull_request'
       uses: stefanzweifel/git-auto-commit-action@v6
       with:
         commit_message: 'chore: update uv.lock'
@@ -67,8 +68,24 @@ jobs:
         commit_user_name: 'github-actions[bot]'
         commit_user_email: 'github-actions[bot]@users.noreply.github.com'
         commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
-        skip_dirty_check: false
-        skip_fetch: false
+
+    - name: Create Pull Request for lock file update
+      if: steps.uv_lock.outputs.lock_updated == 'true' && github.event_name == 'push' && contains(fromJson('["main", "develop"]'), github.ref_name)
+      uses: peter-evans/create-pull-request@v7
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'chore: update uv.lock'
+        title: 'chore: update uv.lock file'
+        body: |
+          This PR was automatically created to update the `uv.lock` file.
+
+          Changes were detected in dependency files and the lock file needs to be updated accordingly.
+
+          Please review and merge this PR to keep dependencies in sync.
+        branch: 'auto-update-uv-lock'
+        delete-branch: true
+        committer: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
+        author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
 
     - name: Add PR comment
       if: steps.uv_lock.outputs.lock_updated == 'true' && github.event_name == 'pull_request'
@@ -85,8 +102,13 @@ jobs:
     - name: Job summary
       run: |
         if [ "${{ steps.uv_lock.outputs.lock_updated }}" == "true" ]; then
-          echo "uv lock file updated and committed successfully"
-          echo "::notice title=uv Lock File::Lock file has been updated and committed"
+          if [ "${{ github.event_name }}" == "pull_request" ]; then
+            echo "uv lock file updated and committed successfully to PR"
+            echo "::notice title=uv Lock File::Lock file has been updated and committed to PR"
+          else
+            echo "uv lock file updated - PR created for protected branch"
+            echo "::notice title=uv Lock File::Lock file update PR created"
+          fi
         else
           echo "uv lock file is up to date"
           echo "::notice title=uv Lock File::No changes required"
