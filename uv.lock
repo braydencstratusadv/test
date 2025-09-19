@@ -297,14 +297,14 @@ wheels = [
 
 [[package]]
 name = "click"
-version = "8.2.1"
+version = "8.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/60/6c/8ca2efa64cf75a977a0d7fac081354553ebe483345c734fb6b6515d96bbc/click-8.2.1.tar.gz", hash = "sha256:27c491cc05d968d271d5a1db13e3b5a184636d9d930f148c50b038f0d0646202", size = 286342, upload-time = "2025-05-20T23:19:49.832Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/46/61/de6cd827efad202d7057d93e0fed9294b96952e188f7384832791c7b2254/click-8.3.0.tar.gz", hash = "sha256:e7b8232224eba16f4ebe410c25ced9f7875cb5f3263ffc93cc3e8da705e229c4", size = 276943, upload-time = "2025-09-18T17:32:23.696Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/85/32/10bb5764d90a8eee674e9dc6f4db6a0ab47c8c4d0d83c27f7c39ac415a4d/click-8.2.1-py3-none-any.whl", hash = "sha256:61a3265b914e850b85317d0b3109c7f8cd35a670f963866005d6ef1d5175a12b", size = 102215, upload-time = "2025-05-20T23:19:47.796Z" },
+    { url = "https://files.pythonhosted.org/packages/db/d3/9dcc0f5797f070ec8edf30fbadfb200e71d9db6b84d211e3b2085a7589a0/click-8.3.0-py3-none-any.whl", hash = "sha256:9b9f285302c6e3064f4330c05f05b81945b2a39544279343e6e7c5f27a9baddc", size = 107295, upload-time = "2025-09-18T17:32:22.42Z" },
 ]
 
 [[package]]
@@ -463,14 +463,14 @@ wheels = [
 
 [[package]]
 name = "django-glue"
-version = "0.8.7"
+version = "0.8.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "django" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1f/92/267cc5b0dfcdfb2e1843fd7faf918bce13ccc4d3ba840523ab74b7b5d4e4/django_glue-0.8.7.tar.gz", hash = "sha256:09c78ba14131125dad795433aa86ef9d95c54f9b896264a80de4c00e98a0993e", size = 110283, upload-time = "2025-07-14T02:29:38.934Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b5/95/190b7b058f58d6a7b81b4920dd843b334aa69c85959bb380f3b7d2fc950e/django_glue-0.8.8.tar.gz", hash = "sha256:6f6a7fea511daa2601181d2c02f57d3b37e74784b4a7543a8dc59a5ce5da7b3f", size = 110339, upload-time = "2025-08-21T15:18:33.102Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3c/ce/4a08137e3065f4a610667cf0ab26447af13a9469742a9351897b50b52799/django_glue-0.8.7-py3-none-any.whl", hash = "sha256:34129350eb605655c859d65f489565c7bed268256ca93ab32291ca3f97a6e3de", size = 147210, upload-time = "2025-07-14T02:29:37.509Z" },
+    { url = "https://files.pythonhosted.org/packages/47/a7/8377ffb87283724092db6c6b23a828a95048c151a746e2e7d79d10525f98/django_glue-0.8.8-py3-none-any.whl", hash = "sha256:bbe8ed681ddeda1072bf276ec2cae4b0ff3f1543968603857bd4a23ae33b17af", size = 147281, upload-time = "2025-08-21T15:18:31.7Z" },
 ]
 
 [[package]]
@@ -489,7 +489,7 @@ wheels = [
 
 [[package]]
 name = "django-spire"
-version = "0.16.2"
+version = "0.16.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "crispy-bootstrap5" },
@@ -510,18 +510,18 @@ dependencies = [
     { name = "twilio" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a3/96/8d5bcda73dff53e209ca82bebeede97e0400adab6edeb5facc9553c03419/django_spire-0.16.2.tar.gz", hash = "sha256:4553280dd34512dd23750adf5bba5a3da94201d487d78cb244c0a2ea74925807", size = 719708, upload-time = "2025-09-17T14:01:58.765Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e5/d3/d71f1237b3d60425f05219fc59d70840cf451926a2bd6147f386e20e873d/django_spire-0.16.5.tar.gz", hash = "sha256:9b4b005aa458564514ade9863f34202138b98fca2eec8a9397e0e496aa6f5c88", size = 720090, upload-time = "2025-09-18T22:15:37.334Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b0/40/6a2a2afb6b61c97f94adbaf2fe8fa9f91ea69b9bcdd37ba03600e82eb8c8/django_spire-0.16.2-py3-none-any.whl", hash = "sha256:a498eb80df3e983a2023d21231021b18149649229b79138accdf51cbcfb6d2bf", size = 1032732, upload-time = "2025-09-17T14:01:57.464Z" },
+    { url = "https://files.pythonhosted.org/packages/c1/ab/81dd4c51ff7ec9f792d90be9b304726990853cd513e340d82396b63cf2a3/django_spire-0.16.5-py3-none-any.whl", hash = "sha256:5fd4344866808ae72745a5e2f9ec125484eadd55a850eb71d2601eaf29272c97", size = 1033341, upload-time = "2025-09-18T22:15:35.87Z" },
 ]
 
 [[package]]
 name = "docutils"
-version = "0.22"
+version = "0.22.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/e9/86/5b41c32ecedcfdb4c77b28b6cb14234f252075f8cdb254531727a35547dd/docutils-0.22.tar.gz", hash = "sha256:ba9d57750e92331ebe7c08a1bbf7a7f8143b86c476acd51528b042216a6aad0f", size = 2277984, upload-time = "2025-07-29T15:20:31.06Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e4/47/d869000fb74438584858acc628a364b277fc012695f0dfd513cb10f99768/docutils-0.22.1.tar.gz", hash = "sha256:d2fb50923a313532b6d41a77776d24cb459a594be9b7e4afa1fbcb5bda1893e6", size = 2291655, upload-time = "2025-09-17T17:58:45.409Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/44/57/8db39bc5f98f042e0153b1de9fb88e1a409a33cda4dd7f723c2ed71e01f6/docutils-0.22-py3-none-any.whl", hash = "sha256:4ed966a0e96a0477d852f7af31bdcb3adc049fbb35ccba358c2ea8a03287615e", size = 630709, upload-time = "2025-07-29T15:20:28.335Z" },
+    { url = "https://files.pythonhosted.org/packages/8c/dc/1948b90c5d9dbfa4d1fd3991013a042ba3ac62ebd3afdcb3fac08366e755/docutils-0.22.1-py3-none-any.whl", hash = "sha256:806e896f256a17466426544038f30cb860a99f5d4af640e36c284bfcb1824512", size = 638455, upload-time = "2025-09-17T17:58:42.498Z" },
 ]
 
 [[package]]
@@ -1517,14 +1517,14 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "django" },
-    { name = "django-glue", specifier = "==0.8.7" },
+    { name = "django-glue", specifier = "==0.8.8" },
     { name = "django-spire" },
 ]
 provides-extras = ["development", "production"]
 
 [[package]]
 name = "twilio"
-version = "9.8.0"
+version = "9.8.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -1532,9 +1532,9 @@ dependencies = [
     { name = "pyjwt" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/27/da/e8b43c05c98bf639282af982b6afb452db946de48eebc4d10c79441c558f/twilio-9.8.0.tar.gz", hash = "sha256:2661241f279494e4b9e2ad88f4b5f57cb27c618c600d07ca44fe863a0ce6ce9a", size = 923393, upload-time = "2025-09-04T10:22:55.211Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/44/44/7220104ed67c1a2a99bf30ef79f658703bd17e3341601c844669fe7a0072/twilio-9.8.1.tar.gz", hash = "sha256:e1feeeeb5f12e59fa4788a1e5b9338cf521480dbb8352e5620b8f92493c2206d", size = 932464, upload-time = "2025-09-18T12:14:37.532Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0b/c9/424ff885d5903d3505dc2ac307aa4b7cd4c19fdc15e05f47e16adef720d9/twilio-9.8.0-py2.py3-none-any.whl", hash = "sha256:d8d34bd74125ea583eaebf29310c54136c2556e23dcc9efca4483691e921d895", size = 1804517, upload-time = "2025-09-04T10:22:53.6Z" },
+    { url = "https://files.pythonhosted.org/packages/a6/80/25dfcec263c47d6d04de0436bcc2064bcaaecfa05f65abad879e54e583c4/twilio-9.8.1-py2.py3-none-any.whl", hash = "sha256:764ccb00a6cd9cdf0217468e7a446cd3aa5df418981aaff8c5b54be9d89f13f2", size = 1820821, upload-time = "2025-09-18T12:14:35.537Z" },
 ]
 
 [[package]]
